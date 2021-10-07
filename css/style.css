@@ -1,5 +1,16 @@
+:root {
+  --bckg-color: #f5f7fa;
+  --white-color: #ffff;
+  --black-color: #000000;
+  --main-text-color: #444444;
+  --secondary-text-color: #5b5b5b;
+  --accent-color: #fb6d3a;
+  --sidebar-color: #1e2939;
+  --contact-color: #abafb5;
+}
+
 body {
-  background-color: #f5f7fa;
+  background-color: var(--bckg-color);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -7,7 +18,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
-  background-color: #ffff;
+  background-color: var(--white-color);
   margin: 40px auto;
   box-shadow: 6px 6px 20px;
 }
@@ -23,7 +34,7 @@ body {
   font-weight: bold;
   font-size: 22px;
   line-height: 27px;
-  color: #000000;
+  color: var(--black-color);
   margin-bottom: 10px;
 }
 
@@ -38,7 +49,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #000;
+  color: var(--black-color);
   margin-bottom: 20px;
 }
 
@@ -47,16 +58,16 @@ body {
   font-weight: bold;
   font-size: 45px;
   line-height: 55px;
-  color: #000;
+  color: var(--black-color);
   margin-bottom: 25px;
 }
 
 .about-me-discription {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  color: #595959;
+  color: var(--main-text-color);
   width: 400px;
 }
 
@@ -71,23 +82,23 @@ body {
 }
 
 .my-projects-item {
-  color: #000;
+  color: var(--black-color);
   font-weight: bold;
 }
 
 .my-projects-link {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  color: #595959;
+  color: var(--main-text-color);
 }
 .my-projects-text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: #595959;
+  color: var(--main-text-color);
   margin-left: 5px;
 }
 
@@ -96,13 +107,13 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  color: #000;
+  color: var(--black-color);
 }
 
 /* My work experience */
 
 .my-work-experience-company {
-  color: #fb6d3a;
+  color: var(--accent-color);
 }
 
 .my-work-experience-position {
@@ -110,21 +121,21 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: var(--black-color);
   margin-bottom: 10px;
 }
 
 .my-work-experience-period {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
-  color: #a8a8a8;
+  color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
 
 .my-work-experience-divider {
-  color: #000000;
+  color: var(--black-color);
 }
 
 .my-work-experience-duties {
@@ -134,9 +145,9 @@ body {
 .my-work-experience-duty {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  color: #595959;
+  color: var(--main-text-color);
 }
 
 .my-work {
@@ -153,15 +164,23 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  color: #fb6d3a;
+  color:var(--accent-color);
 }
 
 .my-faculty {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
-  color: #000000;
+  color: var(--black-color);
+}
+
+.agreement {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--main-text-color);
 }
 
 /* sidebar section */
@@ -181,7 +200,7 @@ body {
   font-weight: bold;
   font-size: 22px;
   line-height: 27px;
-  color: white;
+  color: var(--white-color);
   margin-bottom: 10px;
 }
 
@@ -191,11 +210,11 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  color: white;
+  color: var(--white-color);
   margin-right: 5px;
 }
 .contacts-section-link {
-  color: #abafb5;
+  color: var(--contact-color);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -215,7 +234,7 @@ body {
 
 .tech-skills-item,
 .soft-skills-item {
-  color: #fb6d3a;
+  color: var(--accent-color);
 }
 
 .skills-item-text {
@@ -223,5 +242,5 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: white;
+  color: var(--white-color);
 }
